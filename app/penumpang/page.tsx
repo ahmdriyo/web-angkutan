@@ -48,7 +48,7 @@ const Penumpang = () => {
   }, []);
 
   const filteredRoutes = routes.filter((route) =>
-    route.alamat.toLowerCase().includes(searchTerm.toLowerCase())
+    route.namaPenumpang.toLowerCase().includes(searchTerm.toLowerCase())
   );
   const handleEdit = (id: string) => {
     router.push(`/penumpang/editPenumpang/${id}`);
