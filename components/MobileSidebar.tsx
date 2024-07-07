@@ -3,7 +3,8 @@ import React from 'react'
 import Link from 'next/link'
 import { FiMenu as Icon } from 'react-icons/fi'
 import { FaUser } from 'react-icons/fa'
-
+import Image from 'next/image'
+import profile from "../app/asset/image.png"
 
 export default function MobileSidebar({ setter }) {
     return (
@@ -23,7 +24,11 @@ export default function MobileSidebar({ setter }) {
                 className="text-3xl flex text-white"
                 href="/login"
             >
-                <FaUser />
+                <Image
+                src={profile}
+                alt=""
+                className="w-[40px] h-[40px] rounded-[20px]"
+                />
             </Link>
         </nav>
     )

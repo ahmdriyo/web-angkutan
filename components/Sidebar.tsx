@@ -9,6 +9,8 @@ import { IoIosMan } from "react-icons/io";
 import { IoLogIn, IoTicket } from "react-icons/io5";
 import { signOut, useSession } from "next-auth/react";
 import { IoLogOut } from "react-icons/io5";
+import profile from "../app/asset/image.png"
+import Image from "next/image";
 export default function Sidebar({ show, setter }) {
   const router = useRouter();
   const { data: session, status } = useSession({
@@ -49,9 +51,14 @@ export default function Sidebar({ show, setter }) {
   return (
     <>
       <div className={`${className}${appendClass}`}>
-        <div className="p-2 flex">
-          <Link href="/">
-            <p>logo</p>
+        <div className="p-2 flex justify-center items-center">
+          <Link href="/" className="flex justify-center flex-col items-center">
+            <Image
+            src={profile}
+            alt=""
+            className="w-[150px] h-[150px] rounded-[100px]"
+            />
+            <h2 className="text-white mt-5">Muhammad Yusuf Karimi</h2>
           </Link>
         </div>
         <div className="flex flex-col">
