@@ -22,7 +22,7 @@ export default function MobileSidebar({ setter }) {
             </Link>
             <Link
                 className="text-3xl flex text-white"
-                href="/login"
+                href="/loginAdmin"
             >
                 <Image
                 src={profile}
