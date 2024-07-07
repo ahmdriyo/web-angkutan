@@ -74,9 +74,9 @@ const Tiket = () => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
-              <button className="bg-red-500 hover:bg-red-600  text-white p-2 rounded-r-md">
-                Cari
-              </button>
+              <button className="bg-red-500 hover:bg-red-600 text-white p-2 rounded-b-md md:rounded-r-md md:rounded-bl-none mt-2 md:mt-0">
+            Cari
+          </button>
             </div>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse border border-gray-200">
